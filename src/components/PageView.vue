@@ -30,9 +30,11 @@
           class="absolute inset-x-0 z-20 w-full  bg-white px-6 py-4 shadow-md transition-all duration-300 ease-in-out  lg:relative lg:top-0
            lg:mt-0 lg:flex lg:w-auto lg:translate-x-0 lg:items-center lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:dark:bg-transparent">
           <div class="lg:-px-8 flex flex-col space-y-4 lg:mt-0 lg:flex-row lg:space-y-0">
-            <button :class="{ 'text-[#004225] hover:text-[#1C7947]': isMobile, 'text-white hover:text-[#FFF47D]': !isMobile }"
+            <button
+              :class="{ 'text-[#004225] hover:text-[#1C7947]': isMobile, 'text-white hover:text-[#FFF47D]': !isMobile }"
               class="transform transition-colors duration-300  lg:mx-8">หน้าหลัก</button>
-            <button :class="{ 'text-[#004225] hover:text-[#1C7947]': isMobile, 'text-white hover:text-[#FFF47D]': !isMobile }"
+            <button
+              :class="{ 'text-[#004225] hover:text-[#1C7947]': isMobile, 'text-white hover:text-[#FFF47D]': !isMobile }"
               class="transform transition-colors duration-300  lg:mx-8">สินค้า</button>
             <button onclick="window.open('http://limgar.nbadigital.tech/login', '_blank');"
               :class="{ 'bg-[#004225] text-[#fff]': isMobile, 'bg-[#F7FD04] text-[#064635]': !isMobile }"
@@ -46,30 +48,29 @@
       </nav>
 
       <div class="justify-center w-full text-center lg:p-6 max-auto">
-                    <div class="justify-center w-full mx-auto">
+        <div class="justify-center w-full mx-auto">
 
-                    <div class="flex flex-col items-center justify-center max-w-xl gap-3 mx-auto lg:flex-row">
-                    <img
-                        class='w-32 h-32 rounded-full '
-                        src='../assets/Limgar-2-03.png'
-                    />
-                    </div>
+          <div class="flex flex-col items-center justify-center max-w-xl gap-3 mx-auto lg:flex-row">
+            <img class='w-32 h-32 rounded-full ' src='../assets/Limgar-2-03.png' />
+          </div>
 
 
 
-                      <p class="sm:mt-8 mt-3 sm:px-44 text-white text-4xl sm:text-6xl font-semibold tracking-tighter">
-                        <span class="underline leading-8 underline-offset-8	decoration-8 decoration-[#BAFFB4]">LIMGAR</span> 
-                      </p>
+          <p class="sm:mt-8 mt-3 sm:px-44 text-white text-4xl sm:text-6xl font-semibold tracking-tighter">
+            <span class="underline leading-8 underline-offset-8 decoration-8 decoration-[#BAFFB4]">LIMGAR</span>
+          </p>
 
-                      <p class="sm:mt-8 mt-2.5 text-white sm:px-72  sm:leading-loose text-lg font-normal tracking-tighter">
-                        จำหน่ายน้ำกระท่อม
-                 
-                      </p>
-                      <button onclick="window.open('http://limgar.nbadigital.tech/login', '_blank');"
+
+          <p class="sm:mt-8 mt-2.5 text-white sm:px-72  sm:leading-loose text-lg font-normal tracking-tighter">
+            จำหน่ายน้ำกระท่อม
+
+          </p>
+          <button onclick="window.open('http://limgar.nbadigital.tech/login', '_blank');"
+            style=" box-shadow: 0 0 25px #FEFF89;"
             class="mt-6 rounded-lg bg-[#F7FD04] px-6 py-2.5 text-center text-sm font-medium capitalize leading-5 text-[#1F441E] hover:bg-[#FFD800] focus:outline-none lg:mx-0 lg:w-auto">
             เริ่มต้นใช้งาน</button>
-                    </div>
-                  </div>
+        </div>
+      </div>
 
 
 
@@ -94,7 +95,7 @@
         </div>
 
       </div>
-      
+
     </section>
 
 
@@ -159,11 +160,10 @@
     <footer class="bg-[#064635] ">
       <div class="container mx-auto px-6 py-12">
         <div class="md:-mx-3 md:flex md:items-center md:justify-end">
-    
+
 
           <div class="mt-6 shrink-0 md:mx-3 md:mt-0 md:w-auto">
-            <button onclick="window.open('http://limgar.nbadigital.tech/login', '_blank');"
-             class="inline-flex w-full items-center justify-center rounded-lg bg-[#9ADE7B] px-4 py-2 text-sm text-[#004225] duration-300 
+            <button onclick="window.open('http://limgar.nbadigital.tech/login', '_blank');" class="inline-flex w-full items-center justify-center rounded-lg bg-[#9ADE7B] px-4 py-2 text-sm text-[#004225] duration-300 
               hover:bg-[#A6FF96] focus:ring focus:ring-gray-300 focus:ring-opacity-80">
               <span class="mx-2">เข้าสู่ระบบตอนนี้</span>
 
