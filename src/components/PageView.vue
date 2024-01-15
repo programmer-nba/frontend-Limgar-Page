@@ -45,15 +45,36 @@
 
       </nav>
 
-      <div class="container mx-auto px-6 py-16 text-center">
-        <div class="mx-auto max-w-lg">
-          <h1 class="text-3xl font-bold text-white lg:text-4xl">LIMGAR
-          </h1>
-          <p class="mt-6 text-white ">จำหน่ายน้ำกระท่อม</p>
-          <button onclick="window.open('http://limgar.nbadigital.tech/login', '_blank');"
+      <div class="justify-center w-full text-center lg:p-6 max-auto">
+                    <div class="justify-center w-full mx-auto">
+
+                    <div class="flex flex-col items-center justify-center max-w-xl gap-3 mx-auto lg:flex-row">
+                    <img
+                        class='w-32 h-32 rounded-full '
+                        src='../assets/Limgar-2-03.png'
+                    />
+                    </div>
+
+
+
+                      <p class="sm:mt-8 mt-3 sm:px-44 text-white text-4xl sm:text-6xl font-semibold tracking-tighter">
+                        <span class="underline leading-8 underline-offset-8	decoration-8 decoration-[#BAFFB4]">LIMGAR</span> 
+                      </p>
+
+                      <p class="sm:mt-8 mt-2.5 text-white sm:px-72  sm:leading-loose text-lg font-normal tracking-tighter">
+                        จำหน่ายน้ำกระท่อม
+                 
+                      </p>
+                      <button onclick="window.open('http://limgar.nbadigital.tech/login', '_blank');"
             class="mt-6 rounded-lg bg-[#F7FD04] px-6 py-2.5 text-center text-sm font-medium capitalize leading-5 text-[#1F441E] hover:bg-[#FFD800] focus:outline-none lg:mx-0 lg:w-auto">
             เริ่มต้นใช้งาน</button>
-        </div>
+                    </div>
+                  </div>
+
+
+
+      <div class="container mx-auto px-6 py-16 text-center">
+
 
         <div class="flex justify-center mt-10 ">
           <swiper :centeredSlides="true" :autoplay="{
@@ -73,6 +94,7 @@
         </div>
 
       </div>
+      
     </section>
 
 
@@ -136,9 +158,8 @@
 
     <footer class="bg-[#064635] ">
       <div class="container mx-auto px-6 py-12">
-        <div class="md:-mx-3 md:flex md:items-center md:justify-between">
-          <h1 class="text-3xl font-semibold tracking-tight text-white md:mx-3 xl:text-4xl">Subscribe
-            our newsletter to get update.</h1>
+        <div class="md:-mx-3 md:flex md:items-center md:justify-end">
+    
 
           <div class="mt-6 shrink-0 md:mx-3 md:mt-0 md:w-auto">
             <button onclick="window.open('http://limgar.nbadigital.tech/login', '_blank');"
@@ -182,7 +203,7 @@
           <a href="#"
             class="text-2xl font-bold  transition-colors duration-300 hover:text-[#FBFF00] text-white dark:hover:text-gray-300">LIMGAR</a>
 
-          <p class="mt-4 text-sm text-gray-300 sm:mt-0">© Copyright 2024. All Rights Reserved.</p>
+          <p class="mt-4 text-sm text-gray-300 sm:mt-0">© Copyright 2024. DIGITAL DEVELOPER SERVICE CENTER CO., LTD.</p>
         </div>
       </div>
     </footer>
@@ -220,7 +241,7 @@ export default {
       this.isOpen = !this.isOpen;
     },
     handleResize() {
-      this.isMobile = window.innerWidth < 768;
+      this.isMobile = window.innerWidth < 821;
     },
   },
   setup() {
