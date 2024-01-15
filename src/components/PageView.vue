@@ -30,17 +30,17 @@
           class="absolute inset-x-0 z-20 w-full  bg-white px-6 py-4 shadow-md transition-all duration-300 ease-in-out  lg:relative lg:top-0
            lg:mt-0 lg:flex lg:w-auto lg:translate-x-0 lg:items-center lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:dark:bg-transparent">
           <div class="lg:-px-8 flex flex-col space-y-4 lg:mt-0 lg:flex-row lg:space-y-0">
-            <button :class="{ 'text-[#004225]': isMobile, 'text-white': !isMobile }"
-              class="transform transition-colors duration-300 hover:text-[#FFF47D] lg:mx-8" >หน้าหลัก</button>
-            <button :class="{ 'text-[#004225]': isMobile, 'text-white': !isMobile }"
-              class="transform transition-colors duration-300 hover:text-[#FFF47D] lg:mx-8" >สินค้า</button>
-              <button onclick="window.open('http://limgar.nbadigital.tech/login', '_blank');"
-          :class="{ 'bg-[#004225] text-[#fff]': isMobile, 'bg-[#F7FD04] text-[#064635]': !isMobile }"
-            class="mt-4 block rounded-lg  px-6 py-2.5 text-center font-medium capitalize leading-5  hover:bg-[#FFD31D] lg:mt-0 lg:w-auto">
-            เข้าสู่ระบบ</button>
+            <button :class="{ 'text-[#004225] hover:text-[#1C7947]': isMobile, 'text-white hover:text-[#FFF47D]': !isMobile }"
+              class="transform transition-colors duration-300  lg:mx-8">หน้าหลัก</button>
+            <button :class="{ 'text-[#004225] hover:text-[#1C7947]': isMobile, 'text-white hover:text-[#FFF47D]': !isMobile }"
+              class="transform transition-colors duration-300  lg:mx-8">สินค้า</button>
+            <button onclick="window.open('http://limgar.nbadigital.tech/login', '_blank');"
+              :class="{ 'bg-[#004225] text-[#fff]': isMobile, 'bg-[#F7FD04] text-[#064635]': !isMobile }"
+              class="mt-4 block rounded-lg  px-6 py-2.5 text-center font-medium capitalize leading-5  hover:bg-[#FFD31D] lg:mt-0 lg:w-auto">
+              เข้าสู่ระบบ</button>
           </div>
 
-       
+
         </div>
 
       </nav>
@@ -50,7 +50,7 @@
           <h1 class="text-3xl font-bold text-white lg:text-4xl">LIMGAR
           </h1>
           <p class="mt-6 text-white ">จำหน่ายน้ำกระท่อม</p>
-          <button
+          <button onclick="window.open('http://limgar.nbadigital.tech/login', '_blank');"
             class="mt-6 rounded-lg bg-[#F7FD04] px-6 py-2.5 text-center text-sm font-medium capitalize leading-5 text-[#1F441E] hover:bg-[#FFD800] focus:outline-none lg:mx-0 lg:w-auto">
             เริ่มต้นใช้งาน</button>
         </div>
@@ -59,9 +59,7 @@
           <swiper :centeredSlides="true" :autoplay="{
             delay: 3500,
             disableOnInteraction: false,
-          }" :pagination="{
-  clickable: true,
-}" :modules="modules" class="flex justify-center">
+          }" :pagination="{ clickable: true, }" :modules="modules" class="flex justify-center">
             <swiper-slide>
               <img class=" w-full rounded-xl object-contain sm:object-contain lg:w-4/5" src="../assets/pr1.jpg" />
             </swiper-slide>
@@ -143,7 +141,8 @@
             our newsletter to get update.</h1>
 
           <div class="mt-6 shrink-0 md:mx-3 md:mt-0 md:w-auto">
-            <a href="#" class="inline-flex w-full items-center justify-center rounded-lg bg-[#9ADE7B] px-4 py-2 text-sm text-[#004225] duration-300 
+            <button onclick="window.open('http://limgar.nbadigital.tech/login', '_blank');"
+             class="inline-flex w-full items-center justify-center rounded-lg bg-[#9ADE7B] px-4 py-2 text-sm text-[#004225] duration-300 
               hover:bg-[#A6FF96] focus:ring focus:ring-gray-300 focus:ring-opacity-80">
               <span class="mx-2">เข้าสู่ระบบตอนนี้</span>
 
@@ -151,7 +150,7 @@
                 stroke="currentColor" class="mx-2 h-6 w-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
               </svg>
-            </a>
+            </button>
           </div>
         </div>
 
@@ -181,7 +180,7 @@
 
         <div class="flex flex-col items-center justify-between sm:flex-row">
           <a href="#"
-            class="text-2xl font-bold  transition-colors duration-300 hover:text-gray-700 text-white dark:hover:text-gray-300">LIMGAR</a>
+            class="text-2xl font-bold  transition-colors duration-300 hover:text-[#FBFF00] text-white dark:hover:text-gray-300">LIMGAR</a>
 
           <p class="mt-4 text-sm text-gray-300 sm:mt-0">© Copyright 2024. All Rights Reserved.</p>
         </div>
@@ -195,7 +194,7 @@
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 
 export default {
